@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../../dist/bundle.js"></script>
+</head>
+<body>
+    <div id="register-container">
+    <div id="container-form" class="container-form-register">
+        <h1 class="register-title">Inscription</h1>
+        
+        <form id="signup-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Mot de passe</label>
+            <input type="password" minlength="6" required>
+
+            <div class="invitation-code">
+                <p>Code d'invitation</p>
+                <label for="code" id="code">Veuillez entrer le code d'invitation pour créer un compte.</label>
+                <input id="btn-register" type="submit" value="S'inscrire" required>
+            </div>
+
+            <div class="account">Vous avez déjà un compte ? Connectez-vous</div>
+        </form>
+    </div>
+
+    <div class="img-register"><img src="/assets/woman-5138766_640 (1).png" alt=""></div>
+        </div>
+    
+    <div id="alert-container" class="alert-container" style="display: none;">
+        <div class="alert-box">
+            <span class="alert-message"></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
