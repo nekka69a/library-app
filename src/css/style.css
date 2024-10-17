@@ -4,15 +4,29 @@
 /* Global styles */
 
 html {
-    background-color: rgb(42, 9, 72);
+    background-color: rgb(51, 46, 54);
     min-height: 100vh;
   }
   
   body {
+    background-color: rgb(51, 46, 54);
     font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     color: rgb(227, 210, 231);
     
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 50px;
+    margin: 5px 30px 50px 30px;
+
+  }
+
+  #le-bookin {
+    margin-right: auto;
   }
 
   .book-title {
@@ -27,7 +41,7 @@ html {
 
   h2 {
     font-weight: 500;
-    color: rgb(168, 82, 168);
+    color: #FFD0CA;
   }
 
   #home-container {
@@ -38,12 +52,12 @@ html {
 
   #login-container {
     display: flex;
-    gap: 160px;
+    gap: 130px;
   }
 
   #register-container {
     display: flex;
-    gap: 250px;
+    gap: 200px;
   }
 
   #container-form {
@@ -68,6 +82,7 @@ html {
 
 #signin-form, #signup-form {
     padding: 20px 20px;
+    text-align: center;
 }
 
 
@@ -81,21 +96,48 @@ html {
   }
 
   input{
+  color: rgb(71, 51, 71);
+  font-size: 14px;
   width: 90%;
   height: 30px;
   border: 0px solid transparent;
   border-radius: 10px;
-  padding: 0 10px;
+  padding: 6px;
   margin: 15px 0 15px 0;
+}
 
-  }
+#search-books {
+  border-radius: 10px 0 0 10px;
+  height: 35px;
+}
+
+#inventory-book {
+  font-size: 14px;
+  width: 100%;
+  height: 35px;
+  padding: 6px;
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
+  color: rgb(71, 51, 71);
+}
+
+a {
+ text-decoration: none;
+ color: rgb(227, 210, 231);
+ font-weight: 500;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFD0CA;
+}
 
 
   .up {
     font-size: 70px;
     font-weight: 500;
     font-style: normal;
-    color: #F7E9D1;
+    color: #B7C9E1;
   }
 
   .link-home {
@@ -105,20 +147,51 @@ html {
     border-radius: 10px;
     border: none;
     margin-top: 15px;
-    background-color: #F7E9D1;
-    color: rgb(168, 82, 168);
+    background-color: #B7C9E1;
+    color: rgb(71, 51, 71);
   }
 
   #btn-login, #btn-register {
     font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(227, 210, 231);
+    color: rgb(71, 51, 71);
     font-weight: 500;
-    background-color: rgb(168, 82, 168);
-    margin: 10px 0 15px 90px;
+    background-color: #B7C9E1;
     padding: 6px 20px;
+    width: 60%;
     border-radius: 10px;
     border: none;
-    
+    }
+
+  #btn-login {
+    margin-top: 5px;
+    }
+
+  #btn-switch {
+    width: 10%;
+    padding: 6px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #B7C9E1;
+    color: rgb(71, 51, 71);
+  }
+
+  #btns-switch {
+    text-align: center;
+  }
+  
+  #btn-search {
+    width: 10%;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #B7C9E1;
+    color: rgb(71, 51, 71);
+    margin: 15px 0 15px 0;
+    padding: 6px;
   }
 
   #register {
@@ -128,6 +201,10 @@ html {
   .no-account, .account {
     font-size: 12px;
     text-align: center;
+  }
+
+  .no-account {
+    margin-top: 15px;
   }
 
   .img {
@@ -145,4 +222,13 @@ html {
   .invitation-code{
     font-size: 14px;
     font-weight: 600;
+  }
+
+  .search {
+    display: flex;
+    margin: 0 0 20px 0;
+  }
+
+  #book-table {
+    min-height: 40vh;
   }

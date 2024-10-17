@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" href="/assets/brain-icon.ico" type="image/icon type">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../../dist/bundle.js"></script>
+</head>
+<body>
+        <div class="dashboard-container">
+          <nav>
+            <a href="#boukin" id="le-bookin">Le bookin</a>
+            <a href="#ajout">Ajout</a>
+            <a href="#inventaire">Inventaire</a>
+            <a href="#logout">Se deconnecter</a>
+          </nav>
+
+      <div id="inventory" class="container">
+        <h1>Inventaire Livres</h1>
+          <form action="">
+        <select id="inventory-book">
+          <option value="">Tous les livres</option>
+          <option value="booked">Empruntés</option>
+          <option value="available">Disponibles</option>
+        </select>
+        <div class="search">
+        <input type="text" name="search-book" id="search-books" placeholder="Rechercher par titre, auteur, ISBN...">
+        <button type="submit" id="btn-search">Rechercher</button>
+      </div>
+      <table class="table" id="book-table">
+        <thead>
+          <tr>
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Date publication</th>
+            <th>ISBN</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="body-tab"></tbody>
+      </table>
+      <div id="btns-switch">
+        <button type="button" id="btn-switch">Précédent</button>
+        <button type="button" id="btn-switch">Suivant</button>
+      </div>
+  </div>
+</body>
+</html>
